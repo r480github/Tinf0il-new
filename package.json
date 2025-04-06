@@ -1,7 +1,7 @@
 {
-  "name": "fancy-example",
+  "name": "tinf0il",
   "version": "1.0.1",
-  "description": "An advanced example using Chemical components.",
+  "description": "Probe the internet privately",
   "main": "index.js",
   "type": "module",
   "scripts": {

@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    background:#111;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+@font-face {
+    font-family: monospace;
+    src: url(../assets/fonts/monospace.ttf);
+}
+.title, .slogan {
+    font-family: monospace;
+}
+.title {
+    color: rgb(80, 216, 75);
+    font-size: 4rem;
+    font-weight: 900;
+    margin: 0rem;
+
+}
+.slogan {
+    color: rgb(211, 206, 132);
+    font-size: 1.5rem;
+    font-weight:300;
+}

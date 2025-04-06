@@ -2,7 +2,7 @@ import { ChemicalServer } from "chemicaljs";
 import express from "express";
 
 const [app, listen] = new ChemicalServer();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 8080;
 
 app.use(express.static("public", {
     index: "index.html",
@@ -12,5 +12,11 @@ app.use(express.static("public", {
 app.serveChemical();
 
 listen(port, () => {
-    console.log(`Fancy example listening on port ${port}`);
+    console.log(`████████╗██╗███╗░░██╗███████╗░█████╗░██╗██╗░░░░░`);
+    console.log(`╚══██╔══╝██║████╗░██║██╔════╝██╔══██╗██║██║░░░░░`);
+    console.log(`░░░██║░░░██║██╔██╗██║█████╗░░██║░░██║██║██║░░░░░`);
+    console.log(`░░░██║░░░██║██║╚████║██╔══╝░░██║░░██║██║██║░░░░░`);
+    console.log(`░░░██║░░░██║██║░╚███║██║░░░░░╚█████╔╝██║███████╗`);
+    console.log(`░░░╚═╝░░░╚═╝╚═╝░░╚══╝╚═╝░░░░░░╚════╝░╚═╝╚══════╝`);
+    console.log(`Listening on: http://localhost:${port}`);
 });
