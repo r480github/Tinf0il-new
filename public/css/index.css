@@ -14,6 +14,71 @@ body {
   font-family: monospace;
   src: url(../assets/fonts/monospace.ttf);
 }
+@font-face {
+  font-family: fabrica;
+  src: url(../assets/fonts/fabrica.otf);
+}
+/*NAV BAR*/
+ul {
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  width: 99vw;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  gap: 2rem;
+  background-color: #ffffff05;
+  backdrop-filter: blur(10px);
+  padding-right: 100px;
+  margin-top: 0px
+}
+li {
+  display: table-cell; 
+  position: relative; 
+  padding: 8px 0;
+
+}
+ul a, .fa-solid {
+  color: #ffff;
+  font-family: fabrica;
+  font-size: 1rem;
+}
+li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration:none;
+}
+li a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 0%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+li a:hover:after { 
+  width: 110%; 
+  left: 0; 
+}
+
+
+
+.fa-solid {
+  line-height: 1.6;
+  font-weight: 200;
+  padding-right: 7px;
+  border-radius: 5px;
+  margin: 0;
+
+}
 .title,
 .slogan {
   z-index: 1;
@@ -62,24 +127,29 @@ body {
   border: 1px solid #ffffff00;
 }
 .homepage-btn:hover {
-  border: 1px solid #88ff847e;
+  border: 1px solid #ffffff7e;
   background-color: #ffffff1a;
 }
 footer {
   position: absolute;
   bottom: 0;
   width: 95vw;
+  height: 30px;
   display: flex;
   align-items: center;
   flex-direction: row;
   gap: 20px;
 }
-footer a {
+footer a{
   color: #ffff;
   font-family: monospace;
   font-size: 0.95rem;
   text-decoration: none;
 }
+footer a:hover {
+  text-decoration: underline;
+}
+
 .copyright {
   margin-left: auto;
 }
