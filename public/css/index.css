@@ -8,6 +8,7 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
+  overflow: hidden;
 }
 @font-face {
   font-family: monospace;
@@ -18,18 +19,21 @@ body {
   z-index: 1;
   font-family: monospace;
 }
-.title {
-  color: rgb(80, 216, 75);
-  font-size: 4rem;
-  font-weight: 900;
-  margin: 0rem;
+.titlespan {
+  color: #50d84be0;
+  font-size: 5rem;
+  font-weight: 500;
+  display: inline-block;
 }
 .slogan {
-  color: rgb(240, 234, 150);
-  font-size: 1.5rem;
+  opacity: 0;
+  color: rgba(255, 253, 227, 0.651);
+  font-size: 1.2rem;
   font-weight: 300;
+  margin: 0 0 60px 0;
 }
 .homepage-nav {
+  opacity: 0;
   height: 10%;
   width: 50%;
   display: flex;
@@ -38,11 +42,14 @@ body {
   flex-direction: row;
   gap: 10px;
 }
+.slogan, .homepage-nav {
+  animation: ghostin 1.2s 0.4s forwards;
+}
 .homepage-btn {
   height: 50px;
   width: 200px;
   z-index: 1;
-  background-color: rgb(44, 44, 44);
+  background-color: #ffffff07;
   border: none;
   color: white;
   text-align: center;
@@ -50,5 +57,35 @@ body {
   display: inline-block;
   font-size: 16px;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 8px;
+  transition-duration: 0.5s;
+  border: 1px solid #ffffff00;
+}
+.homepage-btn:hover {
+  border: 1px solid #88ff847e;
+  background-color: #ffffff1a;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 95vw;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+}
+footer a {
+  color: #ffff;
+  font-family: monospace;
+  font-size: 0.95rem;
+  text-decoration: none;
+}
+.copyright {
+  margin-left: auto;
+}
+.dot {
+  height: 0.3rem;
+  width: 0.3rem;
+  background-color: #ffff;
+  border-radius: 200px;
 }
