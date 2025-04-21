@@ -12,11 +12,11 @@ body {
 }
 @font-face {
   font-family: monospace;
-  src: url(../assets/fonts/monospace.ttf);
+  src: url(/assets/fonts/monospace.ttf);
 }
 @font-face {
   font-family: fabrica;
-  src: url(../assets/fonts/fabrica.otf);
+  src: url(/assets/fonts/fabrica.otf);
 }
 /*NAV BAR*/
 ul {
@@ -112,9 +112,9 @@ li a:hover:after {
 }
 .homepage-btn {
   height: 50px;
-  width: 200px;
+  width: 250px;
   z-index: 1;
-  background-color: #ffffff07;
+  background-color: #ffffff10;
   border: none;
   color: white;
   text-align: center;
